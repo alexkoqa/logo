@@ -1,0 +1,151 @@
+.header
+	background-image: linear-gradient(to top, rgba(0,0,0,0.5),rgba(0,0,0,0.3)), url(../img/header_fon.png)
+	background-repeat: no-repeat
+	background-size: cover
+
+	&_nav
+		padding:
+			top: 22px
+			bottom: 22px
+		display: flex
+		align-items: center
+		justify-content: space-between
+
+
+		&_logo
+			display: inline-block
+			font-size: 24px
+			font-weight: 700
+			text-transform: uppercase
+			margin-right: 30px
+			min-width: 70px
+			&:hover
+				& .header_nav_logo_lo
+					color: #da2346
+					transition: .3s
+				& .header_nav_logo_go
+					color: #fff
+					transition: .3s
+
+			&_link
+				text-decoration: none
+				color: #fff
+			&_go
+				color: #da2346
+				margin-left: -5px
+				transition: .8s
+			&_lo
+				transition: .3s
+
+		&_menu
+			display: inline-block
+			text-transform: capitalize
+			font-size: 20px
+			color: #fff
+			&_link
+				text-decoration: none
+				color: #fff
+				margin-right: 40px
+				padding: 5px
+				border-radius: 5px
+				box-shadow: 0 2px 5px #fff
+				transition: .5s
+				&:last-child
+					margin-right: 0
+				&:hover
+					box-shadow: 0 0 25px #fff
+					transition: .5s
+
+		&_social-icon
+			display: flex
+			color: #fff
+			font-size: 17px
+			margin-left: 30px
+			
+			&_link
+				text-decoration: none
+				color: #fff
+				margin-right: 15px
+				border-radius: 50%
+				border: 1px solid #fff
+				opacity: .6
+				transition: .5s
+				&:last-child
+					margin-right: 0
+				&:hover
+					transition: .5s
+					opacity: 1
+					box-shadow: 0 0 30px #fff
+				&:nth-child(1):hover
+					color: #fff
+					background: #2196f3
+					border: 1px solid #2196f3
+				&:nth-child(2):hover
+					color: #2196f3
+					background: #fff
+				&:nth-child(3):hover
+					color: #fff
+					background: #f44336
+					border: 1px solid #f44336
+
+				&_block
+					width: 30px
+					height: 30px
+					border-radius: 50%
+					display: flex
+					align-items: center
+					justify-content: center
+					
+
+	&_line
+		width: 100%
+		height: 2px
+		background: rgba(255,255,255,.3)	
+	
+	&_block
+		display: inline-block
+		margin-top: 125px
+		margin-bottom: 125px
+		text-align: center
+		border: 2px solid rgba(255,255,255, .3)
+		color: #fff
+		&_wrap
+			text-align: center
+		&_title-h1
+			font-size: 73px
+			text-transform: uppercase
+			margin:
+				top: 48px
+				left: 70px
+				right: 70px
+				bottom: 28px
+		&_title-h2
+			font-size: 16px
+			line-height: 1.8
+			opacity: .8
+			margin-bottom: 38px
+.button
+	color: #fff
+	font-size: 21px
+	text-transform: uppercase
+	padding:
+		top: 13px
+		bottom: 13px
+		right: 33px
+		left: 33px
+	background: transparent
+	cursor: pointer
+	border: 2px solid #fff
+	box-shadow: 0 0 25px #fff
+	margin-bottom: 25px
+	transition: .5s
+	&:focus
+		outline: none
+	&:hover
+		box-shadow: 0 0 50px #fff
+		transition: .3s
+		background: #3B2C6F
+		border-right-color: #3B2C6F
+		border-bottom-color: #3B2C6F
+
+
