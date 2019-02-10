@@ -77,10 +77,10 @@
 			max-width: 100%
 			height: 226px
 			filter: grayscale(100)
-			transition: .5s
+			transition: filter .5s linear
 			&:hover
 				filter: grayscale(0)
-				transition: .3s
+				
 			
 		&_title
 			width: 40px
@@ -120,7 +120,7 @@
 	background: #3d3d3d
 	text-align: center
 	color: #fff
-	transition: .3s
+	transition: background .3s linear
 	max-width: calc(100%/3 - 20px)
 	padding:
 		right: 10px
@@ -128,7 +128,6 @@
 	margin-right: -4px
 	&:hover
 		background: #097e89
-		transition: .3s
 		& .our-services_card_title_2
 			opacity: 1
 		& .our-services_card_icon
@@ -165,12 +164,12 @@
 		border: 2px solid #959595
 		box-shadow: 3px 3px 10px #fff
 		border-radius: 3px
-		transition: .3s
+		transition: box-shadow .3s linear
 		&:focus
 			outline: none
 		&:hover
 			box-shadow: 0 0 25px #fff
-			transition: .3s
+
 @keyframes scale
 	0%
 		transform: scale(.5)
