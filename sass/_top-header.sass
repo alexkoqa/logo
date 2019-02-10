@@ -22,10 +22,10 @@
 			&:hover
 				& .header_nav_logo_lo
 					color: #da2346
-					transition: .3s
+
 				& .header_nav_logo_go
 					color: #fff
-					transition: .3s
+
 
 			&_link
 				text-decoration: none
@@ -33,9 +33,9 @@
 			&_go
 				color: #da2346
 				margin-left: -5px
-				transition: .8s
+				transition: color .5s linear
 			&_lo
-				transition: .3s
+				transition: color .3s linear
 
 		&_menu
 			display: inline-block
@@ -51,13 +51,11 @@
 				padding: 5px
 				border-radius: 5px
 				box-shadow: 0 2px 5px #fff
-				transition: .5s
+				transition: box-shadow .5s ease-in-out
 				&:last-child
 					margin-right: 0
 				&:hover
 					box-shadow: 0 0 25px #fff
-					transition: .5s
-
 		&_social-icon
 			display: flex
 			color: #fff
@@ -71,11 +69,10 @@
 				border-radius: 50%
 				border: 1px solid #fff
 				opacity: .6
-				transition: .5s
+				transition: color .3s linear, background .1s linear
 				&:last-child
 					margin-right: 0
 				&:hover
-					transition: .5s
 					opacity: 1
 					box-shadow: 0 0 30px #fff
 				&:nth-child(1):hover
@@ -141,12 +138,12 @@
 	border: 2px solid #fff
 	box-shadow: 0 0 25px #fff
 	margin-bottom: 25px
-	transition: .5s
+	transition: background 0.5s linear, border 0.5s linear, box-shadow 0.5s linear
+
 	&:focus
 		outline: none
 	&:hover
 		box-shadow: 0 0 50px #fff
-		transition: .3s
 		background: #3B2C6F
 		border-right-color: #3B2C6F
 		border-bottom-color: #3B2C6F
@@ -191,6 +188,7 @@
 		margin-right: 0
 		margin-bottom: 10px
 		width: 100px
+		transition: box-shadow .2s linear
 		&:first-child
 			margin-top: 10px
 
@@ -211,7 +209,7 @@
 	.header_nav_menu_link
 		&:hover
 			box-shadow: 0 3px 7px #DA2346
-			transition: .2s
+			
 	.menu_2_block
 		position: relative
 		display: block
